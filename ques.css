@@ -54,12 +54,10 @@ scroll-behavior: smooth;
 
 ::-webkit-scrollbar-thumb{
     width: 0.5rem;
-    background: var(--bs-gray-900);
+    background-color: var(--bs-gray-200);
     border-radius: 5rem;
 }
-body{
-    margin: 0;
-}
+
 .header {
   position: fixed;
   top: 0;
@@ -75,30 +73,30 @@ body{
   padding: 18px 60px;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   font-family: "Poppins", sans-serif;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(211, 211, 211);
 }
 
 /* --- Header Text --- */
 .header h1 {
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
-  color: #e3f2fd;
+  color: #fff;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .header h1:hover {
   transform: scale(1.05);
-  color: #e3f2fd;
+  color: #fffacd;
 }
 
 /* --- Add subtle scroll effect --- */
 body {
   margin: 0;
   padding-top: 80px; /* prevent content from hiding under fixed header */
-  background-color: #f5f7fa;
+  background-color: #fff;
 }
 
 .header.scrolled {
@@ -106,74 +104,13 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* My Past */
-/* .header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #f8f9fa;
-    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
-    padding: 20px 100px;
-    transition: 0.5s;
-}
-/*
-.container{
-    background-color: #fff;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    top: 80px;
-  }
-
-.class1{
-    /* background-color: #6c757d; */
-    /* margin-left: 10px;
-    height: 450px;
-    width: 550px;
-    
-} */
-/* 
-img{
-    height: 400px;
-    width: 500px;
-}
-
-a{
-    font: 1em sans-serif;
-    color: var(--bs-gray-900);
-    border-radius: 20px;
-    margin-left: 200px
-}
-
-a:hover{
-    color: #f8f9fa;
-    background-color: (var(--bs-gray-900));
-}
-.button{
-    padding: 10px;
-    border:1px;
-    border-radius: 10px;
-    background-color: #20c997;
-    color: white;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}  */
-
 /* --- Container grid --- */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
-  background-color: #f5f7fa;
+  background-color: #fff;
 }
 
 /* --- Each item card --- */
@@ -211,8 +148,8 @@ a:hover{
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  background-color: #0078d7;
-  color: #fff;
+  background: var(--bs-white);
+  color: darkgray;
   text-decoration: none;
   border-radius: 6px;
   font-weight: 600;
@@ -221,5 +158,19 @@ a:hover{
 }
 
 .button:hover {
-  background-color: #005bb5;
+  background-color: #fffacd;
+}
+
+footer{
+  background-color: rgba(20, 20, 20, 0.2);
+  color: #212529;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer a{
+color: #212529;
+}
+footer a:hover{
+  color: #005bb5;
 }
